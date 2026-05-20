@@ -1,0 +1,159 @@
+/* RESET STYLES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f8f9fa;
+    color: #333333;
+}
+
+/* NAVBAR POSITIONING */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0b2240; /* Dark Blue */
+    padding: 15px 40px;
+}
+
+.navbar .logo {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+/* BLUE HERO BANNER SECTION */
+.hero-banner {
+    background: linear-gradient(180deg, #103f7a, #16529c); /* Vibrant Blue Section */
+    padding: 40px 40px 20px 40px;
+    color: #ffffff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-content h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 16px;
+    margin-bottom: 30px;
+    opacity: 0.9;
+}
+
+/* SMALL CATEGORIES ROW */
+.small-categories-container {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 40px;
+}
+
+.category-btn {
+    background-color: #aed6f1; /* Light blue button background */
+    color: #0b2240;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/* ONE BOLD SHOP NOW BUTTON AT BOTTOM RIGHT */
+.shop-now-wrapper {
+    width: 100%;
+    max-width: 1100px;
+    display: flex;
+    justify-content: flex-end; /* Pushes button right */
+}
+
+.shop-now-btn {
+    background-color: #ffffff;
+    color: #0b2240;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 6px;
+    font-weight: 900; /* Extra bold text */
+    font-size: 16px;
+    text-transform: uppercase;
+    cursor: pointer;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* FEATURED PRODUCTS CARDS */
+.featured-products {
+    max-width: 1200px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.featured-products h2 {
+    font-size: 26px;
+    margin-bottom: 25px;
+}
+
+.product-grid {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.product-card {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    width: 260px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    border: 1px solid #eaeaea;
+}
+
+.product-img-placeholder {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.product-card h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.product-card p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 12px;
+}
+
+.product-card .price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #0b2240;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.add-to-cart-btn {
+    background-color: #0b2240;
+    color: white;
+    border: none;
+    padding: 10px 0;
+    border-radius: 6px;
+    width: 100%;
+    font-weight: 600;
+    cursor: pointer;
+}

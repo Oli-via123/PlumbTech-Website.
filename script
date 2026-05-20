@@ -1,0 +1,55 @@
+cart.innerHTML = localStorage.getItem("cart") || "";
+let totalPrice = 0;
+let totalDisplay = document.createElement("h3");
+document.querySelector(".cart").appendChild(totalDisplay);
+let cartCount = document.getElementById("cart-count");
+let count = 0;
+let buttons = document.querySelectorAll(".product-card button");
+
+let cart = document.querySelector(".cart-items");
+
+
+buttons.forEach(button => {
+
+    button.addEventListener("click", function() {
+
+        let productCard = button.parentElement;
+
+        let productName =
+            productCard.querySelector(".product-name").innerText;
+
+        let productPrice =
+       localStorage.setItem("cart", cart.innerHTML);   
+    productCard.querySelector(".product-price").innerText;
+count++;
+cartCount.innerText = count;
+let totalPrice = 0;
+let totalDisplay = document.createElement("h3");
+document.querySelector(".cart").appendChild(totalDisplay);
+    
+ cart.innerHTML += 
+    <div class="cart-product">
+        <p>${productName}</p>
+        <p>${productPrice}</p>
+        <button
+     class="remove-btn">Remove</button>
+    </div>
+;
+
+        ;
+
+    });
+
+});
+setTimeout(() => {
+    let removeButtons = document.querySelectorAll(".remove-btn");
+
+    removeButtons.forEach(btn => {
+        btn.onclick = function () {
+            this.parentElement.remove();
+        };
+    });
+}, 100);
+document.getElementById("checkout-btn").onclick = function () {
+    alert("Thank you for your purchase!");
+};
